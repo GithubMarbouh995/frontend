@@ -1,0 +1,107 @@
+<app-header></app-header>
+
+<div class="row m-5  justify-content-center ">
+  <div class="col-5  justify-content-center ">
+
+    <!-- <div class="img-boutique-detail bg-danger " style="height: 120px;"> -->
+       <div *ngFor="let image of boutique.images">
+              <img [src]="image.url" class="card-img-top img_product img-fluid" >
+            </div>
+    <!-- </div> -->
+    <br>
+    <button routerLink="/boutique/{{boutique.id}}/produits" class="btn_sell shadow" style="font-size: 10px; margin-right: 20px;"><a class="text-light link_product"><span class="btn_plus"></span>{{'Produit_boutique' | translate}}</a></button>
+    <!-- <app-commentaire class=""></app-commentaire>
+
+    <h4>Avis : </h4>
+    <div class="row">
+      <div class="col-5 d-block align-items-start ">
+
+        <h4>4.8</h4>
+        <div class="rating">
+          <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+
+        </div>
+
+      </div>
+      <div class="col-5">
+
+        <div class="commentaire">
+          <div class="client-img">
+
+            <img src="" alt="">
+          </div>
+          <div class="client">
+            <div class="d-flex align-items-start ">
+              <h5 class="mr-2">AAMMAR ANWAR</h5>
+              <span>3h</span>
+            </div>
+
+
+            <p>Tres bon service !</p>
+          </div>
+        </div>
+
+        <div class="commentaire">
+          <div class="client-img">
+
+            <img src="" alt="">
+          </div>
+          <div class="client">
+            <div class="d-flex align-items-start ">
+              <h5 class="mr-2">AAMMAR ANWAR</h5>
+              <span>3h</span>
+            </div>
+
+
+            <p>Tres bon service !</p>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div> -->
+
+  </div>
+  <div class="col-5">
+    <h2 class="text-center"> {{boutique.nom}}</h2>
+    <br>
+    <h3>{{'Adresse' | translate}} : </h3>
+    <p class="card-text mb-1" style="font-size: 14px"> {{boutique.adresse}}</p>
+    <br>
+    <h3>{{'Contacts' | translate}} :</h3>
+    <p class="card-text mb-1" style="font-size: 14px"> {{boutique.email}}</p>
+    <p class="card-text mb-1" style="font-size: 14px"> {{boutique.telephone}}</p>
+    <br>
+    <!-- <app-commentaire class=""></app-commentaire> -->
+    <h4>{{'Avis' | translate}} : </h4>
+    <div class="row">
+      <div class="col-5">
+
+        <div class="commentaire" *ngFor="let avis of avis; let i = index">
+          <div class="client-img">
+
+            <img src="" alt="">
+          </div>
+          <div class="client">
+            <div class="d-flex align-items-start ">
+              <h4 class="mr-2">{{clients[i].nom}} {{clients[i].prenom}}</h4>
+            </div>
+
+
+            <p>{{avis.commentaire}}</p>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+    <app-commentaire class="" [id_boutique]="boutique.id"></app-commentaire>
+
+  </div>
+
+</div>
+<app-footer></app-footer>

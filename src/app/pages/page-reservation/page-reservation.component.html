@@ -1,0 +1,22 @@
+<app-header></app-header>
+<div style="width: 80%; margin: auto;">
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Début</th>
+        <th scope="col">Fin</th>
+        <th scope="col">Reserver</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of creneau; index as i">
+        <td>{{ item.dateDebut | date:'short' }}</td>
+        <td>{{ item.dateFin  | date:'short'}}</td>
+        <td> <button class="btn btn_add_cart btn btn-dark" routerLink="modal" type="submit">
+            <i class="fas fa-shopping-cart"></i> Reserver
+          </button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<app-footer></app-footer>

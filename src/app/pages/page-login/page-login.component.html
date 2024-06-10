@@ -1,0 +1,39 @@
+<app-header></app-header>
+<div style="padding-top: 15px">
+  <div class="container form_connect_container mt-3 pb-5 pt-5">
+    <div class="row" style="width:46%; margin:0 auto;">
+      <div class="alert alert-danger" *ngIf="errorMessage">
+        {{errorMessage}}
+      </div>
+      <div class="col-12">
+        <h2 class="">{{"titre_2"|translate}}</h2>
+
+        <form (ngSubmit)="login()" class="form_connect d-flex  flex-column pt-2" >
+          <div class="mb-3 mt-3">
+            <label for="email"> {{"Email"|translate}}</label>
+            <input type="email" class="form-control" id="email" [(ngModel)]="authenticationRequest.email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="pwd">{{"Mot_de_passe"|translate}}</label>
+            <input type="password" class="form-control" id="pwd"  [(ngModel)]="authenticationRequest.password" name="password" required>
+          </div>
+          <div class="text-right mot_de_pass_oublie_txt"> <a href="https://app.beldilook.ma/fr/mot_de_passe_oublie">Mot de passe oublié ?</a> </div> <br>
+          <div>
+            <button type="submit" style="width:100%;" class="btn">{{"auth"|translate}}</button>
+            <div class="or_separator text-center">or</div>
+<!--            <div class="connect_link_container d-flex flex-row justify-content-between">-->
+<!--              <a class="btn google_connect " href="https://app.beldilook.ma/fr/google/auth" role="button" style="text-transform:none; background-color:#fff;">-->
+<!--                <img style="margin-bottom: 2px; margin-right: 5px; width: 13px;" alt="Google sign-in" src="/assets/images/google_logo.png">-->
+<!--                Se connecter avec google-->
+<!--              </a>-->
+<!--              <a href="https://app.beldilook.ma/fr/facebook/auth" style="background-color:#fff; " class="btn google_connect marg ">-->
+<!--                <img style="margin-bottom: 2px; margin-right: 5px; width: 13px;" alt="Google sign-in" src="/assets/images/fb_icon_325x325.png"> Se connecter avec facebook-->
+<!--              </a>-->
+<!--            </div>-->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

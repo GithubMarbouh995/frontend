@@ -1,0 +1,9 @@
+<!-- your-component.component.html -->
+<div class="empty-store" *ngIf="!showNewBoutiqueForm">
+    <i class="fa-solid fa-shop-lock mb-5"></i>
+    <button class="btn btn-success" (click)="showNewBoutiqueForm = true">
+        <span class="fa-solid fa-store mr-3"></span>
+        <span style="font-size: 12px;">Devenir un vendeur</span>
+    </button>
+</div>
+<app-modal-create-boutique  class="BoutiqueForm" *ngIf="showNewBoutiqueForm"></app-modal-create-boutique>

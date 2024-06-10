@@ -1,0 +1,72 @@
+.reservation-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box; margin: 25px;
+}
+.reservation-card p{ font-size: 14px;}
+.reservation-card h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333333;
+}
+.reservation-card .field {
+    margin-bottom: 15px;
+}
+.reservation-card .field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555555;
+}
+.reservation-card .field input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.reservation-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+.reservation-card button:hover {
+    background-color: #0056b3;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.buttons button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.buttons .accept {
+    background-color: #28a745;
+    color: white;
+}
+.buttons .accept:hover {
+    background-color: #218838;
+}
+.buttons .decline {
+    background-color: #dc3545;
+    color: white;
+}
+.buttons .decline:hover {
+    background-color: #c82333;
+}

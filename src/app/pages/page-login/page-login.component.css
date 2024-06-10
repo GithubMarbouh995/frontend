@@ -1,0 +1,168 @@
+.btn2 {
+
+  border: none;
+  border-radius: 4px;
+  opacity: 0.85;
+  font-size: 17px;
+  height: 40px;
+}
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+.btn2:hover {
+  background-color: #3B5998;
+  color: white;
+  opacity: 0.70;
+  text-decoration: none; /* remove underline from anchors */
+}
+@media(max-width:768px)
+{
+  .marg{
+    margin-top: 5px;
+  }
+}
+.form_connect_container h2 {
+  font-family:var(--font-secondary);
+  font-size:24px;
+}
+.form_connect label
+{
+  color:var(--color-primary);
+  font-weight:400;
+  letter-spacing:.1px;
+  font-size:16px;
+  font-family:var(--font-secondary);
+
+}
+
+.form_connect input{
+  border: solid var(--color-primary) 1px;
+  border-radius:10px;
+  margin-top:5px;
+  color:var(--color-primary) !important;
+  font-weight:400 !important;
+}
+
+.form_connect .mot_de_pass_oublie_txt a
+{
+
+  position:relative;
+  bottom:10px;
+  text-decoration:none;
+  color: #bbbbbb;
+  font-size:15px;
+
+
+}
+.form_connect .mot_de_pass_oublie_txt a:hover
+{
+  color:var(--color-primary);
+}
+
+.form_connect button{
+  color:#fff;
+  background-color: var(--color-primary);
+  border: solid 2px transparent;
+  border-radius:10px;
+  padding:8px;
+  margin-bottom:20px;
+}
+
+.form_connect button:hover
+{
+  background:#EFEFEF;
+  color:var(--color-primary);
+  border: solid 2px var(--color-primary);
+  transition:.2s;
+}
+
+.form_connect .fb_connect,
+.form_connect .google_connect
+{
+  color:var(--color-primary);
+  border: solid 1px #dadada;
+  border-radius:10px;
+  font-size:14px;
+
+  width:240px !important;
+
+}
+.form_connect .fb_connect:hover,
+.form_connect .google_connect:hover
+{
+  color:var(--color-primary);
+  background-color: #3B5998;
+  opacity: 0.70;
+  text-decoration: none;
+}
+
+.form_connect .fa-facebook
+{
+  font-size:18px;
+  position:relative;
+  top:2px;
+
+}
+
+@media  screen and (max-width:1160px) {
+  .form_connect_container > div:first-of-type
+  {
+    width:60% !important;
+  }
+}
+
+@media  screen and (max-width:900px) {
+  .form_connect_container > div:first-of-type
+  {
+    width:60% !important;
+  }
+
+  .form_connect_container .connect_link_container
+  {
+    flex-direction:column !important;
+  }
+
+  .form_connect .fb_connect,
+  .form_connect .google_connect
+  {
+    font-size:13px;
+    margin-top:5px;
+    width:100% !important;
+  }
+}
+
+.or_separator
+{
+  color:#bbbbbb;
+  position:relative;
+  margin-top:20px;
+}
+.or_separator::before,
+.or_separator::after {
+  content: "";
+  height: .5px !important;
+  position: absolute;
+  background-color: #bbbbbb;
+  z-index:100;
+}
+
+.or_separator::before {
+  right:1px;
+  width:45%;
+}
+
+.or_separator::after {
+  left:1px;
+  width:45%;
+}
+
+.or_separator::after,
+.or_separator::before{
+  bottom:10px;
+}
+
+.form_connect_container .connect_link_container
+{
+  margin-top:40px;
+}

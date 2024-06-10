@@ -1,0 +1,203 @@
+.btn2 {
+    border: none;
+    border-radius: 4px;
+    opacity: 0.85;
+    font-size: 17px;
+    height: 40px;
+  }
+  .fb {
+    background-color: #3B5998;
+    color: white;
+  }
+  .btn2:hover {
+    background-color: #3B5998;
+    color: white;
+    opacity: 0.70;
+    text-decoration: none; /* remove underline from anchors */
+  }
+  @media(max-width:768px)
+  {
+    .marg{
+      margin-top: 5px;
+    }
+  }
+  
+  
+  
+  
+  
+  .form_register_container h2 {
+    font-family:var(--font-secondary);
+    font-size:24px;
+  }
+  
+  .form_register label
+  {
+    color:var(--color-primary);
+    font-weight:400;
+    letter-spacing:.1px;
+    font-size:16px;
+    font-family:var(--font-secondary);
+  
+  }
+  
+  .form_register input
+  {
+    border: solid var(--color-primary) 1px;
+    border-radius:10px;
+    margin-top:5px;
+    color:var(--color-primary) !important;
+    font-weight:400 !important;
+  }
+  
+  
+  .form_register button
+  {
+    color:#fff;
+    background-color: var(--color-primary);
+    border: solid 2px transparent;
+    border-radius:10px;
+    padding:8px;
+    margin-bottom:20px;
+  }
+  
+  .form_register button:hover
+  {
+    background:#EFEFEF;
+    color:var(--color-primary);
+    border: solid 2px var(--color-primary);
+    transition:.2s;
+  }
+  
+  .form_register .fb_connect,
+  .form_register .google_connect
+  {
+    color:var(--color-primary);
+    border: solid 1px #dadada;
+    border-radius:10px;
+    font-size:14px;
+    line-height:1.7rem;
+    width:240px !important;
+  
+  }
+  .form_register .fb_connect:hover,
+  .form_register .google_connect:hover
+  {
+    color:var(--color-primary);
+    background-color: #3B5998;
+    opacity: 0.70;
+    text-decoration: none;
+  }
+  
+  .form_register .fa-facebook
+  {
+    font-size:18px;
+    position:relative;
+    top:2px;
+  
+  }
+  
+  @media  screen and (max-width:1160px) {
+    .form_register_container > div:first-of-type
+    {
+      width:60% !important;
+    }
+  }
+  
+  @media  screen and (max-width:900px) {
+    .form_register_container > div:first-of-type
+    {
+      width:60% !important;
+    }
+  
+    .form_register_container .connect_link_container
+    {
+      flex-direction:column !important;
+    }
+  
+    .form_register .fb_connect,
+    .form_register .google_connect
+    {
+      font-size:13px;
+      margin-top:5px;
+      width:100% !important;
+    }
+  }
+  
+  .or_separator
+  {
+    color:#bbbbbb;
+    position:relative;
+    margin-top:17px;
+  }
+  .or_separator::before,
+  .or_separator::after {
+    content: "";
+    height: .5px !important;
+    position: absolute;
+    background-color: #bbbbbb;
+    z-index:100;
+  }
+  
+  .or_separator::before {
+    right:1px;
+    width:45%;
+  }
+  
+  .or_separator::after {
+    left:1px;
+    width:45%;
+  }
+  
+  .or_separator::after,
+  .or_separator::before{
+    bottom:10px;
+  }
+  
+  .form_register_container .connect_link_container
+  {
+    margin-top:40px;
+  }
+  
+  .w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
+.selected{
+  border: #EFEFEF 1px solid;
+  background-color: #EFEFEF;
+  color: #212529;
+  padding: 10px;
+  border-radius: 10px;
+
+
+}
+.tags{
+  display: inline-block;
+  margin-right: 12px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-size: 11px;
+  cursor: pointer;
+  min-width: 50px;
+  padding: 10px 27px;
+}
+
+.image_principal{
+  object-fit: cover;
+}
+
+@media  screen and (max-width:768px) {
+  .image_principal{
+    margin-top: 13px;
+  }
+  .img_chontio {
+    margin: 1rem 0 1rem 0 ;
+    padding: 0 0 0 0 !important;
+  }
+}
+
+.price_card{
+  color: #000000;
+  font-size: 16px;
+
+
+}

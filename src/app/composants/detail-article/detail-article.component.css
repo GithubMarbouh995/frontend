@@ -1,0 +1,42 @@
+.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
+.selected{
+  border: #EFEFEF 1px solid;
+  background-color: #EFEFEF;
+  color: #212529;
+  padding: 10px;
+  border-radius: 10px;
+
+
+}
+.tags{
+  display: inline-block;
+  margin-right: 12px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-size: 11px;
+  cursor: pointer;
+  min-width: 50px;
+  padding: 10px 27px;
+}
+
+.image_principal{
+  object-fit: cover;
+}
+
+@media  screen and (max-width:768px) {
+  .image_principal{
+    margin-top: 13px;
+  }
+  .img_chontio {
+    margin: 1rem 0 1rem 0 ;
+    padding: 0 0 0 0 !important;
+  }
+}
+
+.price_card{
+  color: #000000;
+  font-size: 16px;
+
+
+}

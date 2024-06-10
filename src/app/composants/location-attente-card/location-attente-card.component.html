@@ -1,0 +1,22 @@
+<div class="reservation-card">
+    <h2>Demande de Location</h2>
+    <div class="field">
+        <h4>Nom du client</h4>
+        <p class="value">{{location.client.prenom}}</p>
+    </div>
+    <div class="field">
+        <span>Produit</span>
+        <div class="value">{{location.produit.nom}}</div>
+    </div>
+    <div class="field">
+        <span>Date du début de la location</span>
+        <div class="value">{{location.datedebut| date:'dd/MM/yyyy'}}</div>
+    </div>
+    <div class="field">
+        <span>Date du fin de la location</span>
+        <div class="value">{{location.datefin | date:'dd/MM/yyyy'}}</div>
+    </div>
+    <div class="buttons">
+        <button class="accept" (click)="Accepter()">Accepter</button>
+    </div>
+</div>

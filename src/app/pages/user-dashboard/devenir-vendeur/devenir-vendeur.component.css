@@ -1,0 +1,11 @@
+
+.empty-store,.BoutiqueForm{  height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+  i{
+    font-size: 100px;
+    color: #b9b9b9; /* Adjust color as needed */
+  }

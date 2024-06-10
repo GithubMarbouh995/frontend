@@ -1,0 +1,24 @@
+.my-creative-style {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.creative-style-card {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.creative-style-button {
+  /*border-radius: 20px;*/
+  font-weight: bold;
+}
+
+.creative-style-input {
+  border-radius: 5px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+}
+.text-purple {
+  color: #050557;
+}

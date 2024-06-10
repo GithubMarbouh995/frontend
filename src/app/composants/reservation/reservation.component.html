@@ -1,0 +1,77 @@
+<app-header></app-header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+<div class="container my-creative-style">
+  <div class="row justify-content-center">
+    <div class='col-sm-4'>
+      <div class="card creative-style-card">
+        <div class="card-body">
+          <h5 class="text-center text-purple ">{{"Date"|translate}}</h5>
+          <div class="form-group">
+            <div class='input-group date'>
+              <div class='input-group date'>
+                <input [(ngModel)]="date" type="datetime-local" min="{{ today }}" class='form-control creative-style-input' name="dp">
+              </div>
+            </div>
+            <br>
+            <br>
+            <!-- des boutons pour comfirmer ou annuler -->
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" (click)="verify()">
+                {{'verifier'|translate}}
+              </button>
+            
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title" >{{"Verification"|translate}}</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div *ngIf="verify_produit.length == 0 && verify_produit_2.length ==0">
+                      <p>{{"libre_1"|translate}}</p>
+                      <p>{{"libre_2"|translate}}</p>
+                      <button type="button" class="btn btn-outline-dark" data-dismiss="modal" (click)="createReservation()" routerLink="/article/{{this.id_produit}}">{{"confirmer"|translate}}</button>
+                        </div>
+                        <div *ngIf="verify_produit.length != 0 || verify_produit_2.length != 0">
+                            <p>{{"non_libre_1"|translate}}</p>
+                            <p>{{"non_libre_2"|translate}}/p>
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">{{"Annuler"|translate}}</button>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+<app-footer></app-footer>
+
+

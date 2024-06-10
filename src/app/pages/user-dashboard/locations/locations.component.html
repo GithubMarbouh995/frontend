@@ -1,0 +1,57 @@
+<section class="intro">
+    <div class="">
+
+        <div class="mask d-flex align-items-center " style="margin-top: 120px;">
+            <div class="container">
+                <h1 class="mb-5" style="text-align: center;">Mes Locations :</h1>
+                <div class="row justify-content-center">
+                    <div *ngIf="Locations.length > 0; else noLocations">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="table-responsive table-scroll" data-mdb-perfect-scrollbar="true">
+                                    <table class="table table-striped mb-0">
+                                        <thead style="background-color: #002d72;">
+                                            <tr>
+                                                <th scope="col">Produit</th>
+                                                <th scope="col">Boutique</th>
+                                                <th scope="col">Date de Début</th>
+                                                <th scope="col">Date de Fin</th>
+                                                <th scope="col">Validation</th>
+                                                <th scope="col">Annuler</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+
+                                            <tr *ngFor="let loc of Locations; let i = index">
+                                                <td>{{loc.produit.nom}}</td>
+                                                <td>{{Boutiques[i].nom}}</td>
+                                                <td>{{loc.datedebut| date:'dd/MM/yyyy'}}</td>
+                                                <td>{{loc.datefin| date:'dd/MM/yyyy'}}</td>
+                                                <td>
+                                                    <span *ngIf="loc.accepted; else notAccepted">Accepté</span>
+                                                    <ng-template #notAccepted>EN ATTENTE</ng-template>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-danger" (click)="deleteLocation(loc.id)">Annuler</button>
+                                                </td>
+                                                </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ng-template #noLocations>
+                        <h3>Aucune Location</h3>
+                      </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

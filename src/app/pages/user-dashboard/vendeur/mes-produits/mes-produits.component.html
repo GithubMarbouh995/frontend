@@ -1,0 +1,83 @@
+<section class="intro">
+    <div class="">
+
+        <div class="mask d-flex align-items-center " style="margin-top: 120px;">
+
+            <div class="container">
+                <div class="row">
+                    <h1 class="mb-5">Mes produits :</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="table-responsive table-scroll" data-mdb-perfect-scrollbar="true">
+                                    <table class="table table-striped mb-0">
+                                        <thead style="background-color: #002d72;">
+                                            <tr>
+                                                <th scope="col">Nom</th>
+                                                <th scope="col">Catégorie</th>
+                                                <th scope="col">Prix location </th>
+                                                <th scope="col">Date de creation</th>
+                                                <th scope="col">Image</th>
+                                                <th scope="col">Action</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr *ngFor="let prod of produits ; let i = index">
+                                                <td>{{prod.nom}}</td>
+                                                <td>{{prod.categorie}}</td>
+                                                <td>{{prod.prixLocation}}</td>
+                                                <td>{{prod.creationDate| date:'dd/MM/yyyy'}}</td>
+                                                <td>
+                                                    <img src="assets/images/picture_10422137.png" class="my-image" data-toggle="modal"  [attr.data-target]="'#myModal' + i">
+                                                    
+                                                    <!-- The Modal -->
+                                                    <div class="modal" id="myModal{{i}}">
+                                                        <div class="modal-dialog">
+
+                                                            <div class="modal-content">
+                                                                <!-- Modal Header -->
+                                                                <div class="modal-header">
+                                                                    <h4 class="modal-title">{{prod.nom}}</h4>
+                                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                </div>
+                                                                <!-- Modal body -->
+                                                                <div class="modal-body">
+                                                                    <div  *ngFor="let image of prod.images">
+                                                                        <img [src]="image.url" class="card-img-top img_product img-fluid smaller-image" alt="product_card" >
+                                                                     </div>
+                                                                </div>
+                                                                <!-- Modal footer -->
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                                                                </div>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-danger mr-2" (click)="supprimer(prod.id)">Supprimer</button>
+                                                    <button type="button" class="btn btn-danger" (click)="showUpdateProduitForm = true" (click)="this.index = index">Modifier</button>
+                                                </td>
+                                            </tr>
+                                           
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-success" (click)="showNewProduitForm = true">
+                    <span class="fa-solid fa-store mr-3"></span>
+                    <span style="font-size: 12px;">Ajouter Produit</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<app-modal-create-produit  class="BoutiqueForm" *ngIf="showNewProduitForm"></app-modal-create-produit>
+<app-modal-update-produit  class = "BoutiqueForm" *ngIf="showUpdateProduitForm" [produit]="produits[index]"></app-modal-update-produit>

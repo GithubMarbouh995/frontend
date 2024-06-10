@@ -1,0 +1,57 @@
+<section class="intro">
+    <div class="">
+
+        <div class="mask d-flex align-items-center " style="margin-top: 120px;">
+            <div class="container">
+                <h1 class="mb-5" style="text-align: center;">Mes réservations :</h1>
+                <div class="row justify-content-center">
+                    <div *ngIf="Rerservations.length > 0; else noReservations">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="table-responsive table-scroll" data-mdb-perfect-scrollbar="true">
+                                    <table class="table table-striped mb-0">
+                                        <thead style="background-color: #002d72;">
+                                            <tr>
+                                                <th scope="col">Produit</th>
+                                                <th scope="col">Boutique</th>
+                                                <th scope="col">Date d'essayage</th>
+                                                <th scope="col">Heure d'essayage</th>
+                                                <th scope="col">Validation</th>
+                                                <th scope="col">Annuler</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+
+                                            <tr *ngFor="let res of Rerservations; let i = index">
+                                                <td>{{res.produit.nom}}</td>
+                                                <td>{{Boutiques[i].nom}}</td>
+                                                <td>{{res.date| date:'dd/MM/yyyy'}}</td>
+                                                <td>{{res.date| date:'HH:mm'}}</td>
+                                                <td>
+                                                    <span *ngIf="res.accepted; else notAccepted">Accepté</span>
+                                                    <ng-template #notAccepted>EN ATTENTE</ng-template>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-danger" (click)="deleteReservation(res.id)">Annuler</button>
+                                                </td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ng-template #noReservations>
+                        <h3>Aucune réservation</h3>
+                      </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

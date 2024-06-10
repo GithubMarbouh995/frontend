@@ -1,0 +1,843 @@
+<div class="container  mt-5 ajout_produit_contain input_style">
+  <h1 class="text-center" style="color: #212951">Mon compte </h1>
+  <form class="container_form m-auto" action="#" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="_token" value="RgW3Yitui2bVTUli78wIetq50JK0XmaxE6uwVvH8">
+
+
+    <div class="mb-3">
+      <label for="sexe">Sexe :</label>
+      <select class="form-select form-control " aria-label="Default select example"  [(ngModel)]="client.sexe" id="sexe" name="sexe" value="{{client.sexe}}">
+        <option selected ></option>
+        <option value="Homme" >Homme</option>
+        <option value="Femme" >Femme</option>
+      </select>
+
+    </div>
+
+    <div class="mb-3 mt-3">
+      <label for="prenom">Prénom :</label>
+      <input type="text" class="form-control" [(ngModel)]="client.prenom" id="prenom"  name="prenom" value="{{client.prenom}}" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="nom">Nom :</label>
+      <input type="text" class="form-control" [(ngModel)]="client.nom" id="nom" name="nom" value="{{client.nom}}" required>
+    </div>
+
+
+    <div class="mb-3">
+      <label for="telephone">Téléphone :</label>
+      <input type="text" class="form-control " [(ngModel)]="client.telephone" id="telephone" name="telephone" value="{{client.telephone}}" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="pays">Pays :</label>
+      <select class="form-select form-control " aria-label="Default select example" id="pays" name="pays" required>
+        <option selected></option>
+        <option >Afghanistan</option>
+        <option >Afrique du Sud</option>
+        <option >Aland (Iles)</option>
+        <option >Albanie</option>
+        <option >Algérie</option>
+        <option >Allemagne</option>
+        <option >Andorre</option>
+        <option >Angola</option>
+        <option >Anguilla</option>
+        <option >Antarctique</option>
+        <option >Antigua-et-Barbuda</option>
+        <option >Arabie Saoudite</option>
+        <option >Argentine</option>
+        <option >Arménie</option>
+        <option >Aruba</option>
+        <option >Australie</option>
+        <option >Autriche</option>
+        <option >Azerbaïdjan</option>
+        <option >Bahamas</option>
+        <option >Bahreïn</option>
+        <option >Bangladesh</option>
+        <option >Barbade</option>
+        <option >Bélarus</option>
+        <option >Belgique</option>
+        <option >Belize</option>
+        <option >Bénin</option>
+        <option >Bermudes</option>
+        <option >Bhoutan</option>
+        <option >Bolivie (Etat plurinational de)</option>
+        <option >Bonaire, Saint-Eustache et Saba</option>
+        <option >Bosnie-Herzégovine</option>
+        <option >Botswana</option>
+        <option >Bouvet (Ile)</option>
+        <option >Brésil</option>
+        <option >Brunéi Darussalam</option>
+        <option >Bulgarie</option>
+        <option >Burkina Faso</option>
+        <option >Burundi</option>
+        <option >Caïmans (Iles)</option>
+        <option >Cambodge</option>
+        <option >Cameroun</option>
+        <option >Canada</option>
+        <option >Cabo Verde</option>
+        <option >République centrafricaine</option>
+        <option >Chili</option>
+        <option >Chine</option>
+        <option >Chypre</option>
+        <option >Cocos (Iles) / Keeling  (Iles)</option>
+        <option >Colombie</option>
+        <option >Comores</option>
+        <option >Congo</option>
+        <option >Congo (République démocratique du)</option>
+        <option >Corée (République populaire démocratique de)</option>
+        <option >Corée (République de)</option>
+        <option >Costa Rica</option>
+        <option >Côte d&#039;Ivoire</option>
+        <option >Croatie</option>
+        <option >Cuba</option>
+        <option >Curaçao</option>
+        <option >Danemark</option>
+        <option >Djibouti</option>
+        <option >Dominicaine (République)</option>
+        <option >Dominique</option>
+        <option >Egypte</option>
+        <option >El Salvador</option>
+        <option >Emirats arabes unis</option>
+        <option >Equateur</option>
+        <option >Erythrée</option>
+        <option >Espagne</option>
+        <option >Estonie</option>
+        <option >Micronésie (Etats fédérés de)</option>
+        <option >Etats-Unis d&#039;Amérique</option>
+        <option >Ethiopie</option>
+        <option >Falkland (Iles) / Malouines (Iles)</option>
+        <option >Féroé (Iles)</option>
+        <option >Fidji</option>
+        <option >Finlande</option>
+        <option >France</option>
+        <option >Gabon</option>
+        <option >Gambie</option>
+        <option >Géorgie</option>
+        <option >Géorgie du Sud-et-les Iles Sandwich du Sud</option>
+        <option >Ghana</option>
+        <option >Gibraltar</option>
+        <option >Grèce</option>
+        <option >Grenade</option>
+        <option >Groenland</option>
+        <option >Guadeloupe</option>
+        <option >Guam</option>
+        <option >Guatemala</option>
+        <option >Guernesey</option>
+        <option >Guinée</option>
+        <option >Guinée équatoriale</option>
+        <option >Guinée-Bissau</option>
+        <option >Guyana</option>
+        <option >Guyane française</option>
+        <option >Haïti</option>
+        <option >Heard-et-Iles MacDonald (Ile)</option>
+        <option >Honduras</option>
+        <option >Hong Kong</option>
+        <option >Hongrie</option>
+        <option >Christmas (Ile)</option>
+        <option >Ile de Man</option>
+        <option >Norfolk (Ile)</option>
+        <option >Cook (Iles)</option>
+        <option >Mariannes du Nord (Iles)</option>
+        <option >Iles mineures éloignées des Etats-Unis</option>
+        <option >Turks et Caïcos (Iles)</option>
+        <option >Vierges britanniques (Iles)</option>
+        <option >Vierges des Etats-Unis (Iles)</option>
+        <option >Inde</option>
+        <option >Indonésie</option>
+        <option >Iran (République Islamique d&#039;)</option>
+        <option >Iraq</option>
+        <option >Irlande</option>
+        <option >Islande</option>
+        <option >Italie</option>
+        <option >Jamaïque</option>
+        <option >Japon</option>
+        <option >Jersey</option>
+        <option >Jordanie</option>
+        <option >Kazakhstan</option>
+        <option >Kenya</option>
+        <option >Kirghizistan</option>
+        <option >Kiribati</option>
+        <option >Koweït</option>
+        <option >Lao (République démocratique populaire)</option>
+        <option >Lesotho</option>
+        <option >Lettonie</option>
+        <option >Liban</option>
+        <option >Libéria</option>
+        <option >Libye</option>
+        <option >Liechtenstein</option>
+        <option >Lituanie</option>
+        <option >Luxembourg</option>
+        <option >Macao</option>
+        <option >Macédoine (ex-République yougoslave de)</option>
+        <option >Madagascar</option>
+        <option >Malaisie</option>
+        <option >Malawi</option>
+        <option >Maldives</option>
+        <option >Mali</option>
+        <option >Malte</option>
+        <option >Maroc</option>
+        <option >Marshall (Iles)</option>
+        <option >Martinique</option>
+        <option >Maurice</option>
+        <option >Mauritanie</option>
+        <option >Mayotte</option>
+        <option >Mexique</option>
+        <option >Moldova (République de)</option>
+        <option >Mongolie</option>
+        <option >Monténégro</option>
+        <option >Montserrat</option>
+        <option >Mozambique</option>
+        <option >Myanmar</option>
+        <option >Namibie</option>
+        <option >Nauru</option>
+        <option >Népal</option>
+        <option >Nicaragua</option>
+        <option >Niger</option>
+        <option >Nigéria</option>
+        <option >Niue</option>
+        <option >Norvège</option>
+        <option >Nouvelle-Calédonie</option>
+        <option >Nouvelle-Zélande</option>
+        <option >Oman</option>
+        <option >Ouganda</option>
+        <option >Ouzbékistan</option>
+        <option >Pakistan</option>
+        <option >Palaos</option>
+        <option >Palestine </option>
+        <option >Panama</option>
+        <option >Papouasie-Nouvelle-Guinée</option>
+        <option >Paraguay</option>
+        <option >Pays-Bas</option>
+        <option >Pérou</option>
+        <option >Philippines</option>
+        <option >Pitcairn</option>
+        <option >Pologne</option>
+        <option >Polynésie française</option>
+        <option >Porto Rico</option>
+        <option >Portugal</option>
+        <option >Monaco</option>
+        <option >Qatar</option>
+        <option >Réunion</option>
+        <option >Roumanie</option>
+        <option >Royaume-Uni de Grande-Bretagne et d&#039;Irlande du Nor</option>
+        <option >Russie (Fédération de)</option>
+        <option >Rwanda</option>
+        <option >Saint-Barthélemy</option>
+        <option >Sainte-Hélène, Ascension et Tristan Da Cunha</option>
+        <option >Sainte-Lucie</option>
+        <option >Saint-Kitts-Et-Nevis</option>
+        <option >Saint-Martin (partie néerlandaise)</option>
+        <option >Saint-Marin</option>
+        <option >Saint-Martin (partie française)</option>
+        <option >Saint-Pierre-et-Miquelon</option>
+        <option >Saint-Siège</option>
+        <option >Saint-Vincent-et-les Grenadines</option>
+        <option >Salomon (Iles)</option>
+        <option >Samoa</option>
+        <option >Samoa américaines</option>
+        <option >Sao Tomé-et-Principe</option>
+        <option >Sénégal</option>
+        <option >Serbie</option>
+        <option >Seychelles</option>
+        <option >Sierra Leone</option>
+        <option >Singapour</option>
+        <option >Slovaquie</option>
+        <option >Slovénie</option>
+        <option >Somalie</option>
+        <option >Soudan</option>
+        <option >Soudan du Sud</option>
+        <option >Sri Lanka</option>
+        <option >Suède</option>
+        <option >Suisse</option>
+        <option >Suriname</option>
+        <option >Svalbard et l&#039;Ile Jan Mayen</option>
+        <option >Swaziland</option>
+        <option >République arabe syrienne</option>
+        <option >Tadjikistan</option>
+        <option >Taïwan (Province de Chine)</option>
+        <option >Tanzanie (République-Unie de)</option>
+        <option >Tchad</option>
+        <option >Tchèque (République)</option>
+        <option >Terres australes françaises</option>
+        <option >Indien (Territoire britannique de l&#039;océan)</option>
+        <option >Thaïlande</option>
+        <option >Timor-Leste</option>
+        <option >Togo</option>
+        <option >Tokelau</option>
+        <option >Tonga</option>
+        <option >Trinité-et-Tobago</option>
+        <option >Tunisie</option>
+        <option >Turkménistan</option>
+        <option >Turquie</option>
+        <option >Tuvalu</option>
+        <option >Ukraine</option>
+        <option >Uruguay</option>
+        <option >Vanuatu</option>
+        <option >Venezuela (République bolivarienne du)</option>
+        <option >Viet Nam</option>
+        <option >Wallis-et-Futuna</option>
+        <option >Yémen</option>
+        <option >Zambie</option>
+        <option >Zimbabwe</option>
+
+
+      </select>
+
+    </div>
+
+    <div class="mb-3">
+      <label for="ville">Ville :</label>
+
+      <select class="form-select form-control " aria-label="Default select example" id="ville" name="ville" required onchange="select_ville()">
+        <option selected></option>
+        <option   >ADISS</option>
+        <option value="433"   >AFOURER</option>
+        <option value="10"   >AGADIR</option>
+        <option value="469"   >AGAFAY</option>
+        <option value="211"   >AGDZ</option>
+        <option value="767"   >Aghbalou-Boumia</option>
+        <option value="163"   >AGHMAT</option>
+        <option value="671"   >AGLOU</option>
+        <option value="215"   >AGOUIM</option>
+        <option value="898"   >Agourai</option>
+        <option value="756"   >Agourai</option>
+        <option value="630"   >aguelmouss</option>
+        <option value="803"   >AGUERD TAMANART-TATA</option>
+        <option value="471"   >Ahfir</option>
+        <option value="717"   >AIN AICHA</option>
+        <option value="900"   >AIN ALLAH</option>
+        <option value="145"   >Aïn Attiq</option>
+        <option value="689"   >AIN BEIDA</option>
+        <option value="642"   >Aïn-Béni-Mathar</option>
+        <option value="841"   >AIN CHEBAK</option>
+        <option value="828"   >AIN CHEBAK</option>
+        <option value="92"   >Ain Cheggag</option>
+        <option value="498"   >AIN CHKEF</option>
+        <option value="690"   >AIN DEFALI</option>
+        <option value="691"   >AIN DORIJ</option>
+        <option value="146"   >Ain El Aouda</option>
+        <option value="816"   >Ain El Orma</option>
+        <option value="8"   >Ain Harrouda</option>
+        <option value="813"   >Ain Jirri</option>
+        <option value="899"   >Ain Kansara</option>
+        <option value="810"   >Aïn Karma</option>
+        <option value="901"   >Ain Mediouna</option>
+        <option value="891"   >AIN SBIT-KHMISSET</option>
+        <option value="84"   >Ain Taoujtate</option>
+        <option value="740"   >AIN TEKKI MOHAMMADIA</option>
+        <option value="827"   >AIN ZZABDA</option>
+        <option value="198"   >AIT AMIRA</option>
+        <option value="47"   >Ait Atab</option>
+        <option value="591"   >Ait Baha</option>
+        <option value="902"   >Ait Belkacem</option>
+        <option value="214"   >AIT BEN HADO</option>
+        <option value="493"   >AIT IAZZA</option>
+        <option value="629"   >ait ishaq</option>
+        <option value="484"   >Ait kamra</option>
+        <option value="13"   >AIT MELLOUL</option>
+        <option value="674"   >AIT MOUSSA</option>
+        <option value="165"   >AIT OURIR</option>
+        <option value="811"   >Ait Yaazem</option>
+        <option value="482"   >Ajdir</option>
+        <option value="692"   >AKCHOUR</option>
+        <option value="762"   >Akka</option>
+        <option value="797"   >AKKA IGHANE</option>
+        <option value="800"   >AKKA IGUIRENE</option>
+        <option value="611"   >Aklim</option>
+        <option value="845"   >AKLIM</option>
+        <option value="763"   >AKNOUL-TAZA</option>
+        <option value="416"   >Al Aaroui</option>
+        <option value="186"   >Al hoceima</option>
+        <option value="687"   >ALMINA</option>
+        <option value="157"   >Al Ouidane</option>
+        <option value="888"   >AMAZRAOU</option>
+        <option value="164"   >AMIZMIZ</option>
+        <option value="693"   >AMSA</option>
+        <option value="887"   >AMSKROUD-AGADIR</option>
+        <option value="438"   >ANZA</option>
+        <option value="495"   >AOULOUZ</option>
+        <option value="439"   >AOURIR</option>
+        <option value="732"   >ARBAOUA</option>
+        <option value="80"   >Asilah</option>
+        <option value="694"   >ASJEN</option>
+        <option value="446"   >ASNI</option>
+        <option value="589"   >Azemmour</option>
+        <option value="173"   >Azilal</option>
+        <option value="851"   >Azla</option>
+        <option value="88"   >Azrou</option>
+        <option value="903"   >Azzaba - Sefrou</option>
+        <option value="696"   >BAB BERRED</option>
+        <option value="863"   >BAB MARZOUKA-TAZA</option>
+        <option value="695"   >BAB TAZA</option>
+        <option value="408"   >Barrio Chino</option>
+        <option value="57"   >Bedouza</option>
+        <option value="182"   >Bejaad</option>
+        <option value="792"   >BELAAGID</option>
+        <option value="492"   >BELFAA</option>
+        <option value="72"   >BEN AHMED</option>
+        <option value="166"   >BEN GUERIR</option>
+        <option value="417"   >Beni Ansar</option>
+        <option value="428"   >Beni Chiker</option>
+        <option value="648"   >Beni Drar</option>
+        <option value="39"   >BENI MELLAL</option>
+        <option value="697"   >BENI OUAL</option>
+        <option value="904"   >Beni Oulid</option>
+        <option value="878"   >Beni Tadjit-Oujda</option>
+        <option value="30"   >Beni yakhlef</option>
+        <option value="885"   >BENI ZOLI</option>
+        <option value="726"   >BEN KHLIL</option>
+        <option value="34"   >Benslimane</option>
+        <option value="413"   >Ben Taieb</option>
+        <option value="191"   >Berkane</option>
+        <option value="68"   >Berrechid</option>
+        <option value="106"   >Bhalil</option>
+        <option value="622"   >bin el ouidane</option>
+        <option value="489"   >BIOUGRA</option>
+        <option value="586"   >Bir Jdid</option>
+        <option value="698"   >BNI AHMED GHARBIA</option>
+        <option value="894"   >BNI AMART</option>
+        <option value="699"   >BNI ASSEM</option>
+        <option value="665"   >BNI AYAT</option>
+        <option value="220"   >Bni Bouayach</option>
+        <option value="893"   >BNI BOUFRAH</option>
+        <option value="892"   >BNI HDIFA</option>
+        <option value="869"   >BNI KHLOUG-SETTAT R</option>
+        <option value="850"   >Bou Ahmed-CHEFCHAOUAN-</option>
+        <option value="646"   >Bouârfa</option>
+        <option value="441"   >BOUARG-nador-</option>
+        <option value="444"   >BOUCHANE</option>
+        <option value="758"   >Bouderbala</option>
+        <option value="700"   >BOUDEROUA</option>
+        <option value="722"   >BOUDINAR</option>
+        <option value="796"   >BOUDNIB</option>
+        <option value="86"   >Boufekrane</option>
+        <option value="905"   >Bouhouda</option>
+        <option value="744"   >Bouizakarne</option>
+        <option value="583"   >BOUJDOUR</option>
+        <option value="194"   >BOUJNIBA</option>
+        <option value="483"   >Boukidarne</option>
+        <option value="738"   >BOUKNADIL</option>
+        <option value="188"   >BOULANOUARE</option>
+        <option value="870"   >BOULAOUANE-SETTAT R</option>
+        <option value="107"   >Boulemane</option>
+        <option value="210"   >BOUMALNE DADES</option>
+        <option value="594"   >BOUMIA</option>
+        <option value="677"   >BOUNAAMANE</option>
+        <option value="742"   >BOUNOUAR KHOURIBGA</option>
+        <option value="17"   >Bouskoura</option>
+        <option value="33"   >Bouznika</option>
+        <option value="673"   >BOUZOUG</option>
+        <option value="819"   >BRADIA</option>
+        <option value="812"   >Bridia</option>
+        <option value="877"   >BRIKCHA-CHEFCHAOUEN</option>
+        <option value="855"   >BROUJ-Settat</option>
+        <option value="656"   >Cabo Negro</option>
+        <option value="824"   >CAFEMAURE</option>
+        <option value="1"   >CASABLANCA</option>
+        <option value="688"   >CHEFCHAOUEN</option>
+        <option value="61"   >CHEMAIA</option>
+        <option value="701"   >CHERAFAT</option>
+        <option value="169"   >CHICHAOUA</option>
+        <option value="160"   >CHRIFIA</option>
+        <option value="159"   >CHWITER</option>
+        <option value="933"   >CRONA</option>
+        <option value="177"   >DAKHLA</option>
+        <option value="15"   >DarBouazza</option>
+        <option value="412"   >Dar El Kebdani</option>
+        <option value="858"   >Dar Gueddari-SIDI KACEM</option>
+        <option value="815"   >Dar Oum Soltane</option>
+        <option value="14"   >DCHIRA</option>
+        <option value="174"   >Demnate</option>
+        <option value="702"   >DERDARA</option>
+        <option value="196"   >Deroua</option>
+        <option value="932"   >DIABAT</option>
+        <option value="759"   >Dkhissa</option>
+        <option value="906"   >Dlalha</option>
+        <option value="826"   >DOUAR CHLOUH</option>
+        <option value="825"   >DOUAR GHRABA</option>
+        <option value="822"   >DOUAR LAKHTATBA</option>
+        <option value="703"   >DOUAR RIHIYENNE</option>
+        <option value="907"   >Douiyat</option>
+        <option value="431"   >DRARGA</option>
+        <option value="410"   >Driouch</option>
+        <option value="721"   >El Aarjate</option>
+        <option value="645"   >El Aïoun Sidi Mellouk</option>
+        <option value="686"   >EL AMINE</option>
+        <option value="725"   >EL ASSA</option>
+        <option value="176"   >ELATTAOUIA</option>
+        <option value="809"   >EL BARAKA</option>
+        <option value="728"   >EL BORJ</option>
+        <option value="490"   >El gara</option>
+        <option value="87"   >El Hajeb</option>
+        <option value="93"   >El Haj Kaddour</option>
+        <option value="6"   >El Harhoura</option>
+        <option value="23"   >Eljadida</option>
+        <option value="908"   >El Khemis des Aït Ouahi</option>
+        <option value="871"   >EL KHEMIS EL METOUH-SETTAT R</option>
+        <option value="748"   >El Ksiba</option>
+        <option value="678"   >El Maader El Kabir</option>
+        <option value="149"   >EL MANSOURIA</option>
+        <option value="147"   >El menzeh</option>
+        <option value="930"   >El Menzel</option>
+        <option value="723"   >El Ouatia</option>
+        <option value="628"   >EL QBAB</option>
+        <option value="603"   >ERFOUD</option>
+        <option value="592"   >ERRACHIDIA</option>
+        <option value="635"   >ERRAHMA</option>
+        <option value="51"   >ESSAOUIRA</option>
+        <option value="764"   >Fam EL Hsin</option>
+        <option value="418"   >Farkhana</option>
+        <option value="19"   >Fes</option>
+        <option value="832"   >FEZOUANE</option>
+        <option value="426"   >Fezwan</option>
+        <option value="647"   >Figuig</option>
+        <option value="102"   >Fnideq</option>
+        <option value="795"   >FOUM EL OUED</option>
+        <option value="626"   >FOUM JEMAA</option>
+        <option value="774"   >Foum Oudi</option>
+        <option value="798"   >FOUM ZGUID</option>
+        <option value="45"   >FQUIH BEN SALAH</option>
+        <option value="909"   >Fricha</option>
+        <option value="910"   >Galaz</option>
+        <option value="746"   >Gfifat</option>
+        <option value="911"   >Ghafsai</option>
+        <option value="889"   >GHAZOUA-ESSAOUIRA</option>
+        <option value="605"   >GOULMIMA</option>
+        <option value="115"   >GUELMIM</option>
+        <option value="643"   >Guenfouda</option>
+        <option value="103"   >Guercif</option>
+        <option value="111"   >Guigo</option>
+        <option value="868"   >GUISSER-SETTAT R</option>
+        <option value="58"   >HAD HRARA</option>
+        <option value="731"   >HAD KOURT</option>
+        <option value="74"   >Had soualem</option>
+        <option value="657"   >HATTANE</option>
+        <option value="802"   >IBN YAAKOUB</option>
+        <option value="89"   >Ifrane</option>
+        <option value="750"   >Ighram Laalam</option>
+        <option value="168"   >IMINTANOUTE</option>
+        <option value="937"   >Imi ouaddar</option>
+        <option value="112"   >Immouzer mar</option>
+        <option value="90"   >Imouzzer Kandar</option>
+        <option value="912"   >Imouzzer Marmoucha</option>
+        <option value="859"   >IMSOUANE-AGADIR</option>
+        <option value="219"   >Imzouren</option>
+        <option value="217"   >INTERNATIONAL</option>
+        <option value="12"   >INZEGANE</option>
+        <option value="805"   >IRHERM-TAROUDANT</option>
+        <option value="856"   >IRHERM-TATA</option>
+        <option value="765"   >Issafen</option>
+        <option value="486"   >Issaguen</option>
+        <option value="775"   >Itzer</option>
+        <option value="873"   >JAADAR-NADOR</option>
+        <option value="913"   >Jamaa Houderrane</option>
+        <option value="62"   >JEMAAT SHAIM</option>
+        <option value="644"   >Jerada</option>
+        <option value="675"   >JERF-AGADIR</option>
+        <option value="736"   >JMAAT FDALATE</option>
+        <option value="430"   >jorf El Melha</option>
+        <option value="640"   >Jorf Lasfar</option>
+        <option value="705"   >KAA ASRAS</option>
+        <option value="684"   >KABILA</option>
+        <option value="632"   >KAHF NSOUR</option>
+        <option value="209"   >KALAAT M&#039;GOUNA</option>
+        <option value="914"   >Kantra El Ascar</option>
+        <option value="407"   >Kariat Arkmane</option>
+        <option value="861"   >Kariat Ba Mohammed</option>
+        <option value="831"   >KASBAH MOULAY ISMAIL</option>
+        <option value="801"   >KASBAT SIDI ABDELLAH BEN MBAREK</option>
+        <option value="181"   >KASBAT TADLA</option>
+        <option value="874"   >KASSITA</option>
+        <option value="175"   >KELAA DES SRAGHNA</option>
+        <option value="26"   >Kenitra</option>
+        <option value="463"   >KETTARA</option>
+        <option value="585"   >Khemis zemamra</option>
+        <option value="429"   >khenichet</option>
+        <option value="104"   >KHENIFRA</option>
+        <option value="915"   >khlalfa</option>
+        <option value="734"   >KHMISS ANJRA</option>
+        <option value="79"   >Khmisset</option>
+        <option value="706"   >KHMISS M&#039;DIQ</option>
+        <option value="179"   >KHOURIBGA</option>
+        <option value="857"   >KOUDIA AL BAIDA</option>
+        <option value="437"   >Ksar L&#039;kbir</option>
+        <option value="848"   >KSAR SGHIR</option>
+        <option value="881"   >LAAROUMIATE</option>
+        <option value="823"   >LAATAMNA</option>
+        <option value="890"   >LAAYAYDA-SALE</option>
+        <option value="148"   >LAAYOUNE</option>
+        <option value="682"   >LAAYOUNE-PORT</option>
+        <option value="151"   >Lagouassem</option>
+        <option value="724"   >Lahri</option>
+        <option value="720"   >LAKSSIBA-TAROUDANT</option>
+        <option value="59"   >Lalla Fatna</option>
+        <option value="578"   >Lalla Mimouna</option>
+        <option value="448"   >LALLA TAKERKOUST</option>
+        <option value="462"   >LAMNABEHA</option>
+        <option value="78"   >Larache</option>
+        <option value="202"   >LEQLIAA</option>
+        <option value="451"   >LOUDAYA-MARRAKECH</option>
+        <option value="28"   >Louizia</option>
+        <option value="658"   >LOULAD FINI</option>
+        <option value="649"   >Maaziz</option>
+        <option value="422"   >madagh</option>
+        <option value="683"   >MARINA SMIR</option>
+        <option value="2"   >MARRAKECH</option>
+        <option value="25"   >Martil</option>
+        <option value="707"   >MASMOUDA</option>
+        <option value="618"   >MASSA</option>
+        <option value="741"   >MAZAGAN</option>
+        <option value="193"   >Mechraa belksiri</option>
+        <option value="101"   >Medieq</option>
+        <option value="197"   >Mediouna</option>
+        <option value="730"   >MEHDIA</option>
+        <option value="172"   >MEJJAT</option>
+        <option value="847"   >Mejjate Meknes</option>
+        <option value="27"   >Meknes</option>
+        <option value="916"   >Mernissa</option>
+        <option value="860"   >Mers El Kheir</option>
+        <option value="602"   >MERZOUGA</option>
+        <option value="729"   >M&#039;HAMID EL GHIZLANE</option>
+        <option value="85"   >Mhaya</option>
+        <option value="411"   >Midar</option>
+        <option value="109"   >MIDELT</option>
+        <option value="634"   >MIDELT</option>
+        <option value="619"   >MIRLEFT</option>
+        <option value="108"   >Missour</option>
+        <option value="7"   >Mohammadia</option>
+        <option value="727"   >MOHA OU CHERIF</option>
+        <option value="708"   >MOQRISSET</option>
+        <option value="587"   >Moulay Abdellah</option>
+        <option value="577"   >Moulay bousselham</option>
+        <option value="82"   >Moulay Idriss Zerhoun</option>
+        <option value="743"   >MOULAY YAACOUB</option>
+        <option value="917"   >Mqam Tolba</option>
+        <option value="105"   >MRIRT</option>
+        <option value="468"   >MZOUDIA</option>
+        <option value="185"   >Nador</option>
+        <option value="679"   >NKOB</option>
+        <option value="31"   >NOUACEUR</option>
+        <option value="466"   >Nzalat Laadam</option>
+        <option value="718"   >OUAHAT SIDI BRAHIM</option>
+        <option value="56"   >OUALIDIA</option>
+        <option value="872"   >OUAOUIZEGH-AZILAL</option>
+        <option value="875"   >OUARGUI</option>
+        <option value="206"   >OUARZAZATE</option>
+        <option value="576"   >Ouazzane</option>
+        <option value="96"   >Oued Amlil</option>
+        <option value="808"   >OUED JDIDA</option>
+        <option value="709"   >OUED LAOU</option>
+        <option value="180"   >OUED ZEM</option>
+        <option value="830"   >OUFELIOUNE</option>
+        <option value="918"   >OUISSLAN</option>
+        <option value="20"   >OUJDA</option>
+        <option value="895"   >Oulad Abbou-settet-R</option>
+        <option value="672"   >OULAD DAHOU</option>
+        <option value="636"   >Oulad Frej</option>
+        <option value="641"   >Oulad Ghadbane</option>
+        <option value="639"   >Oulad Ghanem</option>
+        <option value="719"   >Oulad Hamdane-El Jadida Région</option>
+        <option value="676"   >OULAD JERRAR</option>
+        <option value="663"   >OULAD MBAREK</option>
+        <option value="794"   >OULAD SAID-SETTAT R</option>
+        <option value="491"   >OULAD SALAH</option>
+        <option value="934"   >OULAD SETTOUT</option>
+        <option value="867"   >OULAD SGHIR-SETTAT R</option>
+        <option value="614"   >OULAD TAIMA</option>
+        <option value="488"   >Oulad tayeb</option>
+        <option value="853"   >OULAD YAICH</option>
+        <option value="660"   >OULAD ZMAM</option>
+        <option value="46"   >OULED AYAD</option>
+        <option value="829"   >OULED BELKHIR</option>
+        <option value="661"   >OULED BENRAHMOUN</option>
+        <option value="666"   >OULED BENRAHMOUN</option>
+        <option value="494"   >OULED BERHIL</option>
+        <option value="919"   >Ouled Daoud</option>
+        <option value="935"   >OULED JELLOUL</option>
+        <option value="199"   >OULED TAIMA</option>
+        <option value="48"   >OULED ZIDOUH</option>
+        <option value="650"   >Oulmas</option>
+        <option value="66"   >OUNAGHA</option>
+        <option value="710"   >OUNNANA</option>
+        <option value="445"   >OURIKA</option>
+        <option value="920"   >Ourtzagh</option>
+        <option value="610"   >Outat El Haj</option>
+        <option value="621"   >Ouzoud</option>
+        <option value="474"   >Point de relais Errahma 1 Casablanca</option>
+        <option value="481"   >Point de relais Hay Mohammadi- Chouhada  Casablanca</option>
+        <option value="480"   >Point de relais Hay Mohammadi- Qoudia  Casablanca</option>
+        <option value="479"   >Point de relais  Idriss Harty Casablanca</option>
+        <option value="470"   >Point de relais  Manjra Casablanca</option>
+        <option value="472"   >Point de relais  Mohammedia Med 6 Casablanca</option>
+        <option value="475"   >Point de relais Oulfa 2 Casablanca</option>
+        <option value="476"   >Point de relais Oum Rabii Extension Casablanca</option>
+        <option value="477"   >Point de relais Saad Elkheir Casablanca</option>
+        <option value="478"   >Point de relais  Sbata Casablanca</option>
+        <option value="473"   >Point de relais Sidi Moumen Casablanca</option>
+        <option value="3"   >Rabat</option>
+        <option value="866"   >RAS EL AIN-SETTAT R</option>
+        <option value="420"   >Ras lma</option>
+        <option value="427"   >Regada</option>
+        <option value="897"   >Ribate El Kheir-Fes Région</option>
+        <option value="601"   >RICH</option>
+        <option value="607"   >RISSANI</option>
+        <option value="654"   >Rommani</option>
+        <option value="50"   >SAFI</option>
+        <option value="921"   >Sahel Boutaher</option>
+        <option value="419"   >Saidia</option>
+        <option value="11"   >Sala Al Jadida</option>
+        <option value="4"   >Salé</option>
+        <option value="685"   >SANIA PLAGE</option>
+        <option value="83"   >Sbaa ayoune</option>
+        <option value="461"   >SEBT BEN SASSI</option>
+        <option value="55"   >SEBT GZOULA</option>
+        <option value="814"   >Sebt Jahjouhe</option>
+        <option value="497"   >SEBT LGERDAN</option>
+        <option value="922"   >sebt mtiwa</option>
+        <option value="91"   >Sefrou</option>
+        <option value="415"   >Selouane</option>
+        <option value="923"   >Senhaja</option>
+        <option value="69"   >Settat</option>
+        <option value="793"   >SIDI ABBAD-marrakech-</option>
+        <option value="443"   >Sidi Abdellah Ghiat</option>
+        <option value="924"   >Sidi Abderrazzak Khzazna</option>
+        <option value="638"   >Sidi abed</option>
+        <option value="659"   >SIDI AISSA</option>
+        <option value="579"   >Sidi Allal El Bahraoui</option>
+        <option value="575"   >Sidi Allal Tazi</option>
+        <option value="584"   >Sidi Bennour</option>
+        <option value="200"   >SIDI BIBI</option>
+        <option value="925"   >Sidi Boukhalkhal</option>
+        <option value="453"   >SIDI BOU OTHMANE</option>
+        <option value="711"   >SIDI BOUSBER</option>
+        <option value="588"   >Sidi Bouzid eljadida</option>
+        <option value="668"   >SIDI BOUZID SAFI</option>
+        <option value="71"   >SIDI EL AIDI-SETTAT R</option>
+        <option value="931"   >Sidi Hajjaj-ouad hassar casa-</option>
+        <option value="73"   >Sidi Hajjaj-SETTAT</option>
+        <option value="95"   >Sidi Harazem</option>
+        <option value="116"   >SIDI IFNI</option>
+        <option value="662"   >SIDI JABER</option>
+        <option value="76"   >Sidi Kacem</option>
+        <option value="75"   >Sidi rahal</option>
+        <option value="712"   >SIDI REDOUANE</option>
+        <option value="77"   >Sidi slimane</option>
+        <option value="637"   >Sidi Smaïl</option>
+        <option value="716"   >SIDI TAIBI</option>
+        <option value="574"   >Sidi Yahya Lgharb</option>
+        <option value="854"   >Sidi Yahya Zaer</option>
+        <option value="452"   >SIDI ZOUINE</option>
+        <option value="170"   >SID L&#039;MOKHTAR</option>
+        <option value="32"   >Skhirat</option>
+        <option value="456"   >SKHOUR REHAMNA</option>
+        <option value="216"   >SKOURA</option>
+        <option value="582"   >Smara</option>
+        <option value="154"   >SOUIHLA</option>
+        <option value="667"   >SOUIRIA</option>
+        <option value="713"   >SOUK AL HAD - CHEFCHAOUEN</option>
+        <option value="580"   >Souk Elarbaa Du Gharb</option>
+        <option value="807"   >SOUK EL GOUR</option>
+        <option value="846"   >Souk Larbaa Essehoul</option>
+        <option value="44"   >SOUK SEBT OULED NEMMA</option>
+        <option value="926"   >Souk Tnine Moghane</option>
+        <option value="714"   >STIHAT</option>
+        <option value="784"   >TADDART-TAZA</option>
+        <option value="876"   >TAFERSIT-NADOR</option>
+        <option value="617"   >TAFRAOUT</option>
+        <option value="938"   >Tagadirt</option>
+        <option value="203"   >TAGHAZOUT</option>
+        <option value="879"   >TAGHBALT</option>
+        <option value="804"   >TAGMOUTE</option>
+        <option value="664"   >TAGZIRT</option>
+        <option value="161"   >TAHANNAOUT</option>
+        <option value="97"   >Tahla</option>
+        <option value="487"   >Talayoussef</option>
+        <option value="496"   >Taliouin</option>
+        <option value="939"   >Tamait Izder</option>
+        <option value="454"   >TAMALLALT</option>
+        <option value="155"   >TAMANSOURT</option>
+        <option value="195"   >Tamaris</option>
+        <option value="680"   >TAMEGROUTE</option>
+        <option value="449"   >TAMESLOUHTE</option>
+        <option value="156"   >TAMESLUHT</option>
+        <option value="144"   >Tamesna</option>
+        <option value="883"   >TAMEZMOUTE</option>
+        <option value="936"   >TAMRI</option>
+        <option value="623"   >TANANTE-AZILAL</option>
+        <option value="18"   >Tanger</option>
+        <option value="884"   >TANSIKHTE</option>
+        <option value="178"   >TANTAN</option>
+        <option value="98"   >Taounate</option>
+        <option value="190"   >Taourirt</option>
+        <option value="843"   >TAOURIRT OUFELIOUNE</option>
+        <option value="485"   >Targuist</option>
+        <option value="204"   >TAROUDANTE</option>
+        <option value="153"   >TASSOULTANTE</option>
+        <option value="787"   >Tata</option>
+        <option value="94"   >Taza</option>
+        <option value="681"   >TAZARINE</option>
+        <option value="862"   >TAZENAKHT-OUARZAZATE</option>
+        <option value="212"   >TAZNAKHT</option>
+        <option value="5"   >Temara</option>
+        <option value="205"   >TEMSIA</option>
+        <option value="733"   >TEROUAL</option>
+        <option value="22"   >Tetouan</option>
+        <option value="927"   >Thar Es-Souk</option>
+        <option value="655"   >Tidas</option>
+        <option value="81"   >Tifelt</option>
+        <option value="627"   >TIGHASSALINE</option>
+        <option value="886"   >TIGNITE</option>
+        <option value="754"   >Timoulilt</option>
+        <option value="818"   >TINDIT</option>
+        <option value="604"   >TINEJDAD</option>
+        <option value="880"   >TINFOU</option>
+        <option value="208"   >TINGHIR</option>
+        <option value="670"   >TIN MANSOUR</option>
+        <option value="882"   >TINZOULINE</option>
+        <option value="99"   >Tissa</option>
+        <option value="790"   >Tissint</option>
+        <option value="16"   >TiTMellil</option>
+        <option value="864"   >TIZI OUASLI-TAZA</option>
+        <option value="432"   >TIZNIT</option>
+        <option value="409"   >Tiztoutine</option>
+        <option value="63"   >TLAT BOUGEDRA</option>
+        <option value="590"   >Tnine Chtouka</option>
+        <option value="669"   >TNINE GHARBIA</option>
+        <option value="60"   >YOUSSOUFIA</option>
+        <option value="791"   >Zag</option>
+        <option value="207"   >ZAGORA</option>
+        <option value="595"   >Zaida</option>
+        <option value="406"   >Zaio</option>
+        <option value="928"   >Zaouiat Bougrine</option>
+        <option value="633"   >zaouiat sheikh</option>
+        <option value="896"   >Zenata</option>
+        <option value="440"   >zghanghan</option>
+        <option value="715"   >ZOUMI</option>
+        <option value="833"   >ZRAYEB</option>
+        <option value="821"   >ZRAYEB</option>
+        <option value="929"   >Zrizer</option>
+
+
+      </select>
+    </div>
+
+
+
+
+    <div class="mb-3">
+      <label for="codepostale">Code Postale :</label>
+      <input type="text" class="form-control " [(ngModel)]="client.adresse.codePostale" id="codepostale" name="codepostale" value="{{client.adresse.codePostale}}" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="adresse">Adresse :</label>
+      <input type="text" class="form-control " [(ngModel)]="client.adresse.adresse1" id="adresse" name="adresse" value="{{client.adresse.adresse1}}" required>
+    </div>
+    <div class="text-center">
+      <button class="btn_valider mr-2" style="text-align: center;" (click)="confirmer()">Confirmer</button>
+    </div>
+  </form>
+</div>
+

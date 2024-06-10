@@ -1,0 +1,16 @@
+export { Adresse } from './models/adresse';
+export { AdresseDto } from './models/adresse-dto';
+export { AuthenticationRequest } from './models/authentication-request';
+export { AuthenticationResponse } from './models/authentication-response';
+export { Catalogue } from './models/catalogue';
+export { Client } from './models/client';
+export { CreneauDisponibilite } from './models/creneau-disponibilite';
+export { CreneauEssayage } from './models/creneau-essayage';
+export { GrantedAuthority } from './models/granted-authority';
+export { Image } from './models/image';
+export { Produit } from './models/produit';
+export { RegisterRequest } from './models/register-request';
+export { Reservation } from 'src/app/models/Reservation';
+export { Location } from 'src/app/models/Location';
+export { Token } from './models/token';
+export { Utilisateur } from './models/utilisateur';

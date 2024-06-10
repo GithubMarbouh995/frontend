@@ -1,0 +1,52 @@
+<div class="container-fluid px-1 py-5 mx-auto">
+    <div class="row d-flex justify-content-center">
+        <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+
+            <div class="card">
+                <h5 class="text-center mb-4">Modifier ma boutique</h5>
+                <form class="form-card" onsubmit="event.preventDefault()">
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> 
+                            <label class="form-control-label px-3">Nom Boutique<span class="text-danger"> *</span></label>
+                            <input type="text" [(ngModel)]="boutique.nom" id="fname" name="fname" value="{{boutique.nom}}">
+                        </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                class="form-control-label px-3">Adresse<span class="text-danger"> *</span></label>
+                            <input type="text" [(ngModel)]="boutique.adresse" name="lname" value="{{boutique.adresse}}">
+                        </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                class="form-control-label px-3">Télephone <span class="text-danger">
+                                    *</span></label> <input type="text" [(ngModel)]="boutique.telephone" id="email" name="email" placeholder="" value="{{boutique.telephone}}"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Site Web<span class="text-danger"> *</span></label>
+                            <input type="text" [(ngModel)]="boutique.siteweb" name="mob" value="{{boutique.siteweb}}">
+                        </div>
+                    </div>
+                    <!-- <div class=" row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                class="form-control-label px-3">Image <span class="text-danger"> *</span></label> <input
+                                type="text" name="job"> </div>
+                    </div> -->
+                        <div  *ngFor="let image of boutique.images">
+                           <img [src]="image.url" class="card-img-top img_product img-fluid smaller-image" alt="product_card" >
+                        </div>
+                        <div class="row justify-content-end" style="text-align: center;">
+                            <div class="form-group col-sm-12 flex-column d-flex"> <label
+                            class="form-control-label px-3">Image <span class="text-danger"> *</span></label>
+                             <input [(ngModel)]="boutique.images" type="file" multiple value="select" #selectFile
+                             (change)="onFileSelected($event)">
+                            </div>
+                        </div> 
+                <div class="row ">
+                    <div class="form-group col-sm-12">
+                             <button type="submit" class="btn-block btn-primary" (click)="confirmer()">Modifier
+                             </button> 
+                    </div>
+                </div>  
+                  
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

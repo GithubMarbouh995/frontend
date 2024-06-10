@@ -1,0 +1,66 @@
+<div class="wrapper d-flex align-items-stretch" style="height: 100vh;">
+    <nav id="sidebar" [class.active]="isSidebarOpen">
+
+        <div class="custom-menu">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-primary" (click)="toggleSidebar()">
+                <i class="fa fa-bars"></i>
+                <span class="sr-only">Toggle Menu</span>
+            </button>
+        </div>
+        <div class="p-4">
+            <h1>
+                <a *ngIf="this.role !== 'ADMIN'" routerLink="" class="logo">Retour vers l'app</a>
+            </h1>
+            <ul class="list-unstyled components mb-5">
+                <li class="p-3" *ngIf="this.role !== 'ADMIN'">
+                    <a routerLink="reservations">
+                        <span class="fa fa-calendar mr-3"></span> Mes réservations
+                    </a>
+                </li>
+                <li class="p-3" *ngIf="this.role !== 'ADMIN'">
+                    <a routerLink="locations">
+                        <span class="fa fa-calendar mr-3"></span> Mes locations
+                    </a>
+                </li>
+
+                <li class="p-3" *ngIf="this.role !== 'ADMIN'">
+                    <a routerLink="profile"><span class="fa fa-user mr-3"></span> Mon profil</a>
+                </li>
+                <li class="p-3" *ngIf="this.role == 'USER'" >
+                    <a routerLink="devenir-vendeur"><span class="fa-solid fa-store mr-3"></span> Devenir vendeur ?</a>
+                </li>
+
+                <li class="p-3" *ngIf="this.role == 'MANAGER'" >
+                    <a routerLink="boutique"><span class="fa-solid fa-store mr-3"></span>
+                        Ma boutique</a>
+                </li>
+                <li class="p-3" *ngIf="this.role == 'MANAGER'">
+                    <a routerLink="produits"><span class="fa-solid fa-basket-shopping mr-3"></span>Mes produits</a>
+                </li>
+                <li class="p-3" *ngIf="this.role == 'MANAGER'">
+                    <a routerLink="reservationsEnAttente"><span
+                            class="fa-regular fa-hourglass-half mr-3"></span>Reservations en
+                        attente</a>
+                </li>
+                <li class="p-3" *ngIf="this.role == 'MANAGER'">
+                    <a routerLink="locationsEnAttente"><span
+                            class="fa-regular fa-hourglass-half mr-3"></span>Locations en
+                        attente</a>
+                </li>
+                <li class="p-3" *ngIf="this.role == 'ADMIN'" >
+                    <a routerLink="clients"><span
+                            class="fa fa-user mr-3"></span>Clients</a>
+                </li>
+                <li class="p-3">
+                    <a (click)="logout()"><span class="fa-solid fa-right-from-bracket mr-3"></span> Se
+                        deconnecter</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="content">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>
