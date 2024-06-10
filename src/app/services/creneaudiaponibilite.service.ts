@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CreneauDisponibiliteService {
-  private apiUrl = 'http://localhost:8081'; // Replace with your API's URL
+  private apiUrl = 'backend-production-fdc5.up.railway.app'; // Replace with your API's URL
 
   constructor(private http: HttpClient) { }
 

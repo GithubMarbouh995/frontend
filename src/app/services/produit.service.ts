@@ -6,7 +6,7 @@ import { Produit } from '../../lvt-api/src/models/produit';
   providedIn: 'root'
 })
 export class ProduitService {
-  private apiUrl = 'http://localhost:8081/api/produits';
+  private apiUrl = 'backend-production-fdc5.up.railway.app/api/produits';
 
   constructor(private http: HttpClient) { }
 
@@ -48,5 +48,5 @@ export class ProduitService {
   produitRecent(): Observable<any> {
     return this.http.get(`${this.apiUrl}/récent`);
   }
-  
+
 }

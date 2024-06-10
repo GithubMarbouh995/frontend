@@ -7,7 +7,7 @@ import { Boutique } from 'src/lvt-api/src/models/boutique';
   providedIn: 'root'
 })
 export class BoutiqueService {
-  private apiUrl = 'http://localhost:8081/api/boutiques'; // Remplacez par l'URL de votre API
+  private apiUrl = 'backend-production-fdc5.up.railway.app/api/boutiques'; // Remplacez par l'URL de votre API
 
   constructor(private http: HttpClient) { }
 

@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CatalogueService {
-  private apiUrl = 'http://localhost:8081'; // Remplacez par l'URL de votre API
+  private apiUrl = 'backend-production-fdc5.up.railway.app'; // Remplacez par l'URL de votre API
 
   constructor(private http: HttpClient) { }
 
